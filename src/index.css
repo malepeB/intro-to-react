@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap');
+
+:root {
+  --color-bg-teal: #a9cdd6;
+  --color-bg-teal-light: #bcdae1;
+  --color-bg-cream: #f7f5f0;
+  --color-navy: #17222e;
+  --color-navy-light: #24323f;
+  --color-text-dark: #1c2733;
+  --color-text-muted: #5d6b78;
+  --color-text-on-dark: #f5f6f4;
+  --color-white: #ffffff;
+  --color-border: #e2ded4;
+
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+
+  --max-width: 1180px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}

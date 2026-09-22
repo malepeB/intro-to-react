@@ -1,0 +1,138 @@
+.footer {
+  background-color: var(--color-bg-cream);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 72px 24px 48px;
+}
+
+.footer__brand {
+  flex: 1.4 1 220px;
+}
+
+.footer__column {
+  flex: 0.8 1 140px;
+}
+
+.footer__column--wide {
+  flex: 1 1 200px;
+}
+
+.footer__newsletter {
+  flex: 1 1 200px;
+}
+
+.footer__brand h3 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  max-width: 220px;
+}
+
+.footer__column h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.footer__column ul li {
+  margin-bottom: 10px;
+}
+
+.footer__column ul a {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer__column ul a:hover {
+  color: var(--color-text-dark);
+}
+
+.footer__column--wide p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  max-width: 260px;
+}
+
+.footer__newsletter h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__form input {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background-color: var(--color-white);
+}
+
+.footer__form input:focus {
+  outline: 2px solid var(--color-bg-teal);
+  outline-offset: 1px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__socials a:hover {
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 900px) {
+  .footer__brand,
+  .footer__column,
+  .footer__column--wide,
+  .footer__newsletter {
+    flex-basis: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__brand h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__column--wide p {
+    margin: 0 auto;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
